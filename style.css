@@ -277,7 +277,7 @@ body {
 
 #why{
   max-width: 100%;
-  min-height: 80vh;
+  height: fit-content;
   /* border: 1px solid rgb(246, 255, 0); */
 }
 
@@ -292,7 +292,7 @@ body {
     width: 95%;
     min-height: 50vh;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 30px;
     justify-content: space-around;
     /* border: 1px solid rgb(4, 255, 0); */
@@ -307,7 +307,7 @@ body {
   }
   
   #why .row  .card-wrap{
-    width: 230px;
+    width: 250px;
     background: #fff;
     border-radius: 20px;
     border: 5px solid #fff;
@@ -318,6 +318,7 @@ body {
     transition: all .2s ease-in-out;
     display: inline-block;
     margin: 4%;
+    margin-bottom: 30px;
  }
  #why .row   .card-header:hover{
     transform: scale(1.03);
