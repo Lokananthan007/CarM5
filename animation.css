@@ -1,0 +1,22 @@
+/* Scroll animation */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fadecon-up {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 3s ease-out, transform 2s ease-out;
+}
+
+.fadecon-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}

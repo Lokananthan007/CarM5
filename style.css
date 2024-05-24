@@ -35,8 +35,7 @@ body {
     top: 0;
     z-index: 100;
     width: 100%;
-    /* position: fixed !important; */
-    background-color: #ffffffb5 !important; 
+    background-color: #ffffff !important; 
     box-shadow: 0px 1px 5px #4a4f55 !important;
 }
 
@@ -134,7 +133,6 @@ body {
     font-weight: 700;
     padding-top: 10px;
     padding-bottom: 10px;
-    animation: home 1.5s ease 0s 1 normal forwards;
 }
 
 #home .content button{
@@ -148,39 +146,30 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 10px;
-    animation: home 1.5s ease 0s 1 normal forwards;
 }
 
 #home .content button:hover{
     background-color: #E0E0E0;
     color: red;
+    border-style: solid ridge;
 }
 
-@keyframes home {
-	0% {
-		transform: scale(0.5);
-	}
-
-	100% {
-		transform: scale(1);
-	}
-}
+/* About Styling */
 
 #about{
     max-width: 100%;
     min-height: 100vh;
     /* background: radial-gradient(ellipse at 51% 125%,#ff0000, rgb(0, 0, 0)); */
     background-color: #ffffff;
-    /* margin: 0 auto; */
 }
 
 #about h3{
     font-size: clamp(18px, 3vw, 35px) !important;
     font-weight: 500;
-    padding-top: 10px;
+    padding-top: 40px;
     color: red;
     text-align: center;
-    padding-top: 40px;
+    padding-bottom: 20px;
 }
 #about .row {
     width: 95%;
@@ -188,12 +177,9 @@ body {
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    /* border: 2px solid rgb(0, 26, 255); */
 }
 
 #about .row .col-md-6{
-    /* border: 2px solid red; */
-    /* margin-top: 20px; */
     position: relative;
 }
 
@@ -202,19 +188,19 @@ body {
     background-size: cover;
     width: 100%;
     height: 100%;
-    filter: drop-shadow(2.5px 2.5px 10px rgb(0, 0, 0));
 }
 
 #about .col-md-6 h2{
     position: absolute;
-    top: 0;
+    top: -13px;
     right: 0;
-    color: rgb(255, 145, 0);
-    background-color: #000000;
+    color: rgb(255, 136, 0);
+    background-color: #000000bb;
     padding: 10px;
     font-size: clamp(15px, 2vw, 35px) !important;
     font-weight: 500;
-    box-shadow: 2.5px 2.5px 10px rgb(74, 74, 74);
+    box-shadow: 2.5px -2.5px 10px rgb(74, 74, 74);
+    backdrop-filter: blur(2px);
 }
 
 #about .col-md-6 h1{
@@ -246,6 +232,7 @@ body {
     width: 100%;
     font-size: clamp(10px, 2.5vw, 35px);
     color: red;
+    text-decoration: none;
 }
 
 #about .col-md-6 h4{
@@ -273,13 +260,123 @@ body {
     font-size: clamp(1rem, 2vw, 1.5rem);
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 10px;
-    animation: home 1.5s ease 0s 1 normal forwards;
+    margin: 20px 0 0 0;
 }
 
 #about .col-md-6 button:hover{
     background-color: #ffffff;
     color: red;
-    border: 2px solid red;
     text-align: center;
+    border-style: solid ridge;
 }
+
+/* Why Styling */
+
+#why{
+  max-width: 100%;
+  min-height: 50vh;
+}
+
+#why h3{
+    font-size: clamp(18px, 3vw, 35px) !important;
+    font-weight: 500;
+    color: red;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#why .row {
+    width: 95%;
+    min-height: 50vh;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-around;
+}
+
+:root{
+    --color-text: #616161;
+    --color-text-btn: #ffffff;
+    --card1-gradient-color1: #f12711;
+    --card1-gradient-color2: #f5af19;
+  }
+  
+  #why .row  .card-wrap{
+    width: 230px;
+    background: #fff;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    color: var(--color-text);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+                rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: all .2s ease-in-out;
+    display: inline-block;
+    margin: 4%;
+ }
+ #why .row   .card-header:hover{
+    transform: scale(1.03);
+  }
+
+  #why .row  .card-header{
+    height: 200px;
+    width: 100% !important;
+    background: red;
+    border-radius: 100% 0% 100% 0% / 50% 50% 50% 100%;
+    display: grid;
+    place-items: center;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  #why .row  .card-header i{
+    color: #ffffff;
+    font-size: 72px;
+  }
+
+  #why .row  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #why .row  .card-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+  }
+
+  #why .row .card-text{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  #why .row .card-btn{
+    border: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  #why .row .card-btn:hover{
+    border: none;
+    color: #c6ffff;
+  }
+
+  #why .row  .card-header.one{
+    margin: 0px !important;
+    background: linear-gradient(to bottom left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+  }
+
+  #why .row  .card-btn.one{
+    background: linear-gradient(to left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+  }
+  
