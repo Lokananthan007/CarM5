@@ -158,9 +158,10 @@ body {
 
 #about{
     max-width: 100%;
-    min-height: 100vh;
+    height: fit-content;
     /* background: radial-gradient(ellipse at 51% 125%,#ff0000, rgb(0, 0, 0)); */
     background-color: #ffffff;
+    /* border: 1px solid red; */
 }
 
 #about h3{
@@ -176,11 +177,13 @@ body {
     min-height: 500px;
     margin: 0 auto;
     margin-top: 30px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    /* border: 1px solid rgb(238, 129, 45); */
 }
 
 #about .row .col-md-6{
     position: relative;
+    /* border: 1px solid rgb(238, 206, 45); */
 }
 
 #about .col-md-6 img{
@@ -274,7 +277,8 @@ body {
 
 #why{
   max-width: 100%;
-  min-height: 50vh;
+  min-height: 80vh;
+  /* border: 1px solid rgb(246, 255, 0); */
 }
 
 #why h3{
@@ -282,17 +286,17 @@ body {
     font-weight: 500;
     color: red;
     text-align: center;
-    padding-top: clamp(10px, 1.7vw, 30px);
-    /* padding-bottom: 10px; */
 }
 
 #why .row {
     width: 95%;
     min-height: 50vh;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 30px;
     justify-content: space-around;
+    /* border: 1px solid rgb(4, 255, 0); */
+
 }
 
 :root{
@@ -346,16 +350,18 @@ body {
   #why .row  .card-title{
     text-align: center;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 23px;
     margin-top: 10px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 10px;
+    color: rgb(7, 10, 63);
+    font-weight: 500;
   }
 
   #why .row .card-text{
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 20px;
+    color: rgb(40, 39, 39);
   }
 
   #why .row .card-btn{
